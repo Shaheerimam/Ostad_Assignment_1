@@ -1,7 +1,7 @@
 abstract class Vehicle {
   int _speed = 0;
   void move();
-  void setSpeed(int speed) {
+  set setSpeed(int speed) {
     _speed = speed;
     print('Speed set to $_speed');
   }
@@ -15,6 +15,6 @@ class Car_1 extends Vehicle {
 }
 void main() {
   Car_1 myCar = Car_1();
-  myCar.setSpeed(60);
+  myCar.setSpeed=60;
   myCar.move();
 }
